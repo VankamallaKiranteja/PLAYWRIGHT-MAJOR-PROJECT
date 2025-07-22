@@ -1,0 +1,52 @@
+Navigating to the URL
+Number Of Hospitals : 8
+[
+  {
+    name: 'MIOT International Hospital',
+    rating: 4.5,
+    availability: 'Open 24x7',
+    location: 'Manapakkam'
+  },
+  {
+    name: 'Apollo Spectra Hospital',
+    rating: 4,
+    availability: 'Open 24x7',
+    location: 'Alwarpet and +12 centers'
+  },
+  {
+    name: 'Apollo Cradle',
+    rating: 4,
+    availability: 'Open 24x7',
+    location: 'Karapakkam and +12 centers'
+  },
+  {
+    name: 'Cloudnine Hospital',
+    rating: 5,
+    availability: 'Open 24x7',
+    location: 'T Nagar'
+  },
+  {
+    name: 'Motherhood Hospital',
+    rating: 4.5,
+    availability: 'Open 24x7',
+    location: 'Alwarpet'
+  },
+  {
+    name: 'Shadithya Hospital',
+    rating: 5,
+    availability: 'Open 24x7',
+    location: 'Pallavaram'
+  },
+  {
+    name: 'Apollo Spectra Hospitals',
+    rating: 4,
+    availability: 'Open 24x7',
+    location: 'MRC Nagar and +12 centers'
+  },
+  {
+    name: 'Promed Hospital',
+    rating: 5,
+    availability: 'Open 24x7',
+    location: 'Kottivakkam'
+  }
+]

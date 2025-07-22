@@ -1,0 +1,33 @@
+Form not enables Schedule Demo button with valid input  expect.toBeEnabled: Target page, context or browser has been closed
+    at C:\Users\2414365\OneDrive - Cognizant\Desktop\MAJOR\tests\corporate.spec.js:25:54 {
+  [Symbol(step)]: {
+    stepId: 'expect@18',
+    category: 'expect',
+    apiName: 'expect.toBeEnabled',
+    title: 'toBeEnabled',
+    params: undefined,
+    infectParentStepsWithError: undefined,
+    boxedStack: undefined,
+    location: {
+      file: 'C:\\Users\\2414365\\OneDrive - Cognizant\\Desktop\\MAJOR\\tests\\corporate.spec.js',
+      line: 25,
+      column: 54
+    },
+    steps: [],
+    attachmentIndices: [],
+    info: TestStepInfoImpl {
+      annotations: [],
+      _testInfo: [TestInfoImpl],
+      _stepId: 'expect@18',
+      skip: [Function (anonymous)]
+    },
+    complete: [Function: complete],
+    endWallTime: 1753076633571,
+    error: {
+      message: 'Error: expect.toBeEnabled: Target page, context or browser has been closed',
+      stack: 'Error: expect.toBeEnabled: Target page, context or browser has been closed\n' +
+        '    at C:\\Users\\2414365\\OneDrive - Cognizant\\Desktop\\MAJOR\\tests\\corporate.spec.js:25:54',
+      cause: undefined
+    }
+  }
+}

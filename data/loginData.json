@@ -1,0 +1,15 @@
+{
+    "valid": {
+      "username": "6303023464",
+      "password": "9989199089"
+    },
+    "emptyPassword": {
+      "username": "6303023464",
+      "password": ""
+    },
+    "emptyBoth": {
+      "username": "",
+      "password": ""
+    }
+  }
+  
