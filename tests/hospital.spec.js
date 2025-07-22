@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-import { HospitalPage } from '../Pages/hospitalPage';
+import { HospitalPage } from '../pages/hospitalPage';
 
 test('Find hospitals in Chennai with filters', async ({ page }) => {
     try {
