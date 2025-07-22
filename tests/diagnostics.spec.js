@@ -18,8 +18,9 @@ test('Check for duplicate cities in diagnostics list', async ({ page }) => {
     await diagnosticsPage.goto();
     const cities = await diagnosticsPage.getCityList();
 
-    const uniqueCities = new Set(cities);
+    const uniqueCities = new Set(cities);// set store unique city names
     expect(uniqueCities.size).toBe(cities.length); // ensure no duplicates
+
   } catch (error) {
     console.log('Error in Check for duplicate cities test');
   }
