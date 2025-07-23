@@ -26,7 +26,7 @@ export class CorporateWellnessPage {
       console.error('Error navigating to the page:');
     }
   }
-
+ 
   async fillInvalidDetails() {
     try {
       await this.nameInput.fill('');
