@@ -1,0 +1,52 @@
+Navigating to the URL
+Number Of Hospitals : 8
+[
+  {
+    name: 'Manipal Hospital Varthur Road (formerly Columbia Asia Hospital)',
+    rating: 4,
+    availability: 'Open 24x7',
+    location: 'Whitefield and +8 centers'
+  },
+  {
+    name: 'Manipal Hospitals',
+    rating: 4.5,
+    availability: 'Open 24x7',
+    location: 'Yeshwanthpur and +8 centers'
+  },
+  {
+    name: 'Motherhood Hospital',
+    rating: 4.5,
+    availability: 'Open 24x7',
+    location: 'Indiranagar and +8 centers'
+  },
+  {
+    name: 'Koshys Hospital',
+    rating: 4,
+    availability: 'Open 24x7',
+    location: 'Ramamurthy Nagar'
+  },
+  {
+    name: 'Apollo Spectra Hospitals',
+    rating: 4,
+    availability: 'Open 24x7',
+    location: 'Koramangala 5 Block'
+  },
+  {
+    name: 'Motherhood Hospital',
+    rating: 4.5,
+    availability: 'Open 24x7',
+    location: 'Whitefield and +2 centers'
+  },
+  {
+    name: 'Trilife Hospital',
+    rating: 4,
+    availability: 'Open 24x7',
+    location: 'Kalyan Nagar'
+  },
+  {
+    name: 'Apollo Cradle & Children’s Hospital',
+    rating: 4.5,
+    availability: 'Open 24x7',
+    location: 'Whitefield and +2 centers'
+  }
+]

@@ -19,7 +19,6 @@ test.afterEach(async ({ page }) => {
 
 test('@sanity Valid Login', async () => {
   await accountLogin.login(loginData.valid.username, loginData.valid.password);
-
 });
 
 test('@sanity Checkbox validation', async () => {
@@ -54,3 +53,10 @@ test('@regression Empty login input error messages', async () => {
   ).toBe(true);
 });
 
+
+// test('@sanity Valid Login', async () => {
+//   await accountLogin.login(loginData.valid.username, loginData.valid.password);
+//   const UName=await accountLogin.getloginName()
+//   console.log(UName)
+//   await expect(UName).toBe('Kiran')
+// });

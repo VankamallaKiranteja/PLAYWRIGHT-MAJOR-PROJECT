@@ -15,17 +15,16 @@ export class DiagnosticsPage {
     try {
 
       const cityNames = [];
-      
+
       const cities = await this.page.locator("//li[@class='u-text--center']").all();
-      //const cityNames = await Promise.all(cities.map(city => city.innerText()));
-      
+
       for (const city of cities) {
         cityNames.push(await city.innerText());
       }
 
       return cityNames;
     } catch (error) {
-      console.error('Error retrieving city list:', error);
+      console.error('Error retrieving city list:');
 
     }
   }

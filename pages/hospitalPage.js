@@ -16,7 +16,7 @@ export class HospitalPage {
             console.log('Navigating to the URL');
             await this.page.goto('https://www.practo.com/', { waitUntil: 'domcontentloaded' });
         } catch (error) {
-            console.log('Error during navigation:');
+            console.log('Error during navigation');
         }
     }
 
@@ -64,7 +64,7 @@ export class HospitalPage {
                         });
                     }
                 } catch (error) {
-                    console.warn('Skipped a hospital due to missing or malformed data:', error);
+                    console.log('Skipped a hospital due to missing or malformed data');
                 }
             }
 
@@ -72,7 +72,7 @@ export class HospitalPage {
             return qualifiedHospitals;
 
         } catch (error) {
-            console.error('Error while fetching hospital cards:', error);
+            console.log('Error while fetching hospital cards');
         }
     }
 

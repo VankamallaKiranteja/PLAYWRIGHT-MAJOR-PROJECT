@@ -8,7 +8,7 @@ test('Validate form does not allow submission with invalid data', async ({ page 
     await wellnessPage.fillInvalidDetails();
     await expect(wellnessPage.scheduleButton).toBeDisabled();
   } catch (e) {
-    console.log('Validate form does not allow submission with invalid data');
+    console.log('Error in testCase: Validate form does not allow submission with invalid data');
   }
 });
 
@@ -27,7 +27,7 @@ test('Form Schedule button disable with out phone number field input', async ({ 
     // await expect(isEnabled).toBeTruthy();
   } catch (e) {
     //expect(button).toBeDisabled()
-    console.log('Form enables Schedule Demo button with out valid input ');
+    console.log('Error in testCase: Form enables Schedule Demo button with out valid input ');
   }
 });
 
@@ -45,7 +45,7 @@ test('Dropdown values reflect correctly after selection', async ({ page }) => {
     expect(sizeValue).toBe('1001-5000');
     expect(interestValue).toBe('Referring someone');
   } catch (e) {
-    console.log('Dropdown values reflect correctly after selection');
+    console.log('Error in testCase:Dropdown values reflect correctly after selection');
   }
 });
 
@@ -57,6 +57,6 @@ test('@sanity Url contains corporate', async ({ page }) => {
     console.log('Current URL', url);
     await expect(url).toContain('corporate');
   } catch (e) {
-    console.log('Url contains corporate');
+    console.log('Error in testCase: Url contains corporate');
   }
 });

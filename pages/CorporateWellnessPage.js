@@ -3,21 +3,25 @@ export class CorporateWellnessPage {
     this.page = page;
 
     // XPath selectors targeting the first form instance on the page
-    this.nameInput = page.locator('//*[@id="name"]').first();
-    this.orgInput = page.locator('//*[@id="organizationName"]').first();
-    this.phoneInput = page.locator('//*[@id="contactNumber"]').first();
+    this.nameInput = page.getByPlaceholder("Name").first();
+    this.orgInput = page.getByPlaceholder("Organization Name").first();
+    this.phoneInput = page.getByPlaceholder("Contact Number").first();
+
+    // this.nameInput = page.locator('//*[@id="name"]').first();
+    // this.orgInput = page.locator('//*[@id="organizationName"]').first();
+    // this.phoneInput = page.locator('//*[@id="contactNumber"]').first();
     this.emailInput = page.locator('//*[@id="officialEmailId"]').first();
     this.orgSizeSelect = page.locator('//*[@id="organizationSize"]').first();
     this.interestSelect = page.locator('//*[@id="interestedIn"]').first();
-    this.scheduleButton=page.locator("//header[@id='header']//button[@type='submit'][normalize-space()='Schedule a demo']")
+    this.scheduleButton = page.locator("//header[@id='header']//button[@type='submit'][normalize-space()='Schedule a demo']")
     //this.scheduleButton = page.getByRole('button', { name: 'Schedule a demo' });
-    // this.baseUrl = 'https://www.practo.com/plus/corporate'; // replace with actual URL
+    
   }
 
   async goto() {
     try {
-      await this.page.goto('https://www.practo.com/plus/corporate', {waitUntil: 'domcontentloaded'});
-      
+      await this.page.goto('https://www.practo.com/plus/corporate', { waitUntil: 'domcontentloaded' });
+
     } catch (error) {
       console.error('Error navigating to the page:');
     }
@@ -62,5 +66,5 @@ export class CorporateWellnessPage {
       console.error('Error filling valid details:');
     }
   }
-   
-  }
+
+}
