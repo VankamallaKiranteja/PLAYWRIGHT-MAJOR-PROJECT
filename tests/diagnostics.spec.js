@@ -5,8 +5,8 @@ test('Get top diagnostic cities', async ({ page }) => {
   try {
     const diagnosticsPage = new DiagnosticsPage(page);
     await diagnosticsPage.goto();
-    const cities = await diagnosticsPage.getCityList();
-    console.log("Cities:", cities);
+    const cities = await diagnosticsPage.getCityList(); // Fetch the list of cities
+    console.log("Cities:", cities);// print the list of cities
   } catch (error) {
     console.log('Error in Get top diagnostic cities test');
   }
@@ -16,7 +16,7 @@ test('Check for duplicate cities in diagnostics list', async ({ page }) => {
   try {
     const diagnosticsPage = new DiagnosticsPage(page);
     await diagnosticsPage.goto();
-    const cities = await diagnosticsPage.getCityList();
+    const cities = await diagnosticsPage.getCityList();// Fetch the list of cities
 
     const uniqueCities = new Set(cities);// set store unique city names
     expect(uniqueCities.size).toBe(cities.length); // ensure no duplicates
@@ -33,7 +33,7 @@ test('Check for presence of popular cities', async ({ page }) => {
     const cities = await diagnosticsPage.getCityList();
 
     const popularCities = ['Mumbai', 'Delhi', 'Chennai'];
-    popularCities.forEach(city => expect(cities).toContain(city));
+    popularCities.forEach(city => expect(cities).toContain(city)); // check if popular cities are present in the list
   } catch (error) {
     console.log('Error in Check for presence of popular cities test');
   }

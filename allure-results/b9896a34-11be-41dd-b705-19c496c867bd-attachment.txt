@@ -1,0 +1,6 @@
+Navigating to the URL
+Error during navigation
+Error while filling location field:
+Error during hospital type selection:
+Error while fetching hospital cards
+Error during "Find hospitals in Chennai with filters

@@ -51,9 +51,9 @@ export class HospitalPage {
                     const name = (await card.locator('.line-1').textContent()).trim();
                     const ratingText = (await card.locator('.c-feedback .u-bold').textContent()).trim();
                     const availabilityText = (await card.locator('.pd-right-2px-text-green').textContent()).trim();
-                    const locationText = (await card.locator('.c-locality-info').textContent()).trim();
+                    const locationText = (await card.locator('.c-locality-info').textContent()).trim();//
 
-                    const ratingValue = parseFloat(ratingText);
+                    const ratingValue = parseFloat(ratingText);// Convert rating text to a number
 
                     if (ratingValue > 3.5 && availabilityText.includes('24x7')) {
                         qualifiedHospitals.push({
@@ -61,7 +61,7 @@ export class HospitalPage {
                             rating: ratingValue,
                             availability: availabilityText,
                             location: locationText,
-                        });
+                        });// Add the hospital to the list if it meets the conditions
                     }
                 } catch (error) {
                     console.log('Skipped a hospital due to missing or malformed data');
@@ -82,10 +82,10 @@ export class HospitalPage {
     }
     async enterInvalidSearchAndCaptureMessage(invalidText) {
 
-        await this.hospitaltype.click(); // Ensure focus
-        await this.hospitaltype.fill(invalidText);
+        await this.hospitaltype.click(); // Click to focus on the input field
+        await this.hospitaltype.fill(invalidText);// Fill the input with invalid text
 
-        await this.page.waitForTimeout(10000);
+        await this.page.waitForTimeout(10000); // Wait for the input to process
 
         await this.page.keyboard.press('Enter');
 
@@ -93,7 +93,7 @@ export class HospitalPage {
 
         await this.messageLocator.waitFor(); // Ensure it's visible
 
-        const errMessage = await this.messageLocator.textContent();
+        const errMessage = await this.messageLocator.textContent();// Get the error message text
 
         return errMessage;
     }

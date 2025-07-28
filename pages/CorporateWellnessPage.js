@@ -29,14 +29,11 @@ export class CorporateWellnessPage {
  
   async fillInvalidDetails() {
     try {
+      // Fill the form with invalid details
       await this.nameInput.fill('');
       await this.orgInput.fill('FakeOrg');
       await this.phoneInput.fill('123');
       await this.emailInput.fill('invalid@');
-      // await this.orgSizeSelect.selectOption({ label: '<500' });
-      // await this.waitfor(1000); // wait for dropdown to update
-      // await this.interestSelect.selectOption({ label: 'Taking a demo' });
-      // await this.waitfor(1000); // wait for dropdown to update
     } catch (error) {
       console.error('Error filling invalid details:');
     }
@@ -54,9 +51,9 @@ export class CorporateWellnessPage {
     try {
       await this.nameInput.type('Kiran');
       await this.orgInput.type('KiranCorp Pvt Ltd');
-      // await this.phoneInput.type('9876543210');
+
       await this.emailInput.fill('Kiran@techcorp.com');
-      // await this.waitforSelector(this.orgSizeSelect); // wait for dropdown to update
+     
       await this.orgSizeSelect.click();
 
       await this.orgSizeSelect.selectOption({ label: '1001-5000' });
@@ -66,5 +63,15 @@ export class CorporateWellnessPage {
       console.error('Error filling valid details:');
     }
   }
-
+  async dropSelect() {
+    await this.orgSizeSelect.selectOption({ label: '1001-5000' });
+    await this.interestSelect.selectOption({ label: 'Referring someone' });
+  }
+  
+  async getDropSelectValue() {
+    const sizeValue = await this.orgSizeSelect.inputValue();
+    const interestValue = await this.interestSelect.inputValue();// Get the selected values from the dropdowns
+    return { sizeValue, interestValue };// Return both values as an object
+  }
+  
 }

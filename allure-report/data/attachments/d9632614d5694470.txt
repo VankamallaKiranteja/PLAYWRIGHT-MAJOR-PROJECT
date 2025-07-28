@@ -1,0 +1,3 @@
+Navigating to the URL
+Error during navigation
+Error during Enter invalid hospital type and capture message

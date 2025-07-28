@@ -1,0 +1,34 @@
+Navigating to the URL
+Number Of Hospitals : 5
+[
+  {
+    name: 'Sitaram Bhartia Institute Of Science & Research',
+    rating: 4,
+    availability: 'Open 24x7',
+    location: 'Qutab Institutional Area'
+  },
+  {
+    name: 'Max Multi Speciality Centre',
+    rating: 4.5,
+    availability: 'Open 24x7',
+    location: 'Panchsheel Park and +8 centers'
+  },
+  {
+    name: 'Apollo Spectra Hospital',
+    rating: 4,
+    availability: 'Open 24x7',
+    location: 'Greater Kailash Part 1 and +1 centers'
+  },
+  {
+    name: 'SCI International Hospital',
+    rating: 4.5,
+    availability: 'Open 24x7',
+    location: 'Greater Kailash Part 1'
+  },
+  {
+    name: 'Aarogya Hospital',
+    rating: 4,
+    availability: 'Open 24x7',
+    location: 'Chitra Vihar'
+  }
+]

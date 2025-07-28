@@ -10,7 +10,7 @@ export class DiagnosticsPage {
       console.error('Error navigating to diagnostics page:');
     }
   }
-  //Promise.all waits for all innerText() calls to complete.
+ 
   async getCityList() {
     try {
 
@@ -19,7 +19,7 @@ export class DiagnosticsPage {
       const cities = await this.page.locator("//li[@class='u-text--center']").all();
 
       for (const city of cities) {
-        cityNames.push(await city.innerText());
+        cityNames.push(await city.innerText());// Extract city names from the list
       }
 
       return cityNames;
